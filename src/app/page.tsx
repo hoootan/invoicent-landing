@@ -383,16 +383,17 @@ export default function HomePage() {
                     </li>
                   ))}
                 </ul>
-                <div className="mt-6">
-                  <div className="dark:hidden">
-                    <AppStoreBadge variant="black" />
-                  </div>
-                  <div className="hidden dark:block">
-                    <AppStoreBadge variant="white" />
-                  </div>
-                </div>
               </Card>
             ))}
+          </div>
+
+          <div className="mt-8 flex justify-center">
+            <div className="dark:hidden">
+              <AppStoreBadge variant="black" />
+            </div>
+            <div className="hidden dark:block">
+              <AppStoreBadge variant="white" />
+            </div>
           </div>
         </section>
 
