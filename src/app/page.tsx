@@ -115,10 +115,15 @@ export default function HomePage() {
       <header className="sticky top-0 z-50 border-b bg-background/70 backdrop-blur supports-[backdrop-filter]:bg-background/50">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
           <div className="flex items-center gap-2">
-            <div className="grid size-9 place-items-center rounded-xl border bg-card">
-              <span className="font-[var(--font-display)] text-sm font-semibold">
-                I
-              </span>
+            <div className="grid size-9 place-items-center overflow-hidden rounded-xl border bg-card">
+              <Image
+                src="/brand/logo.png"
+                alt={`${siteConfig.name} logo`}
+                width={36}
+                height={36}
+                className="size-9"
+                priority
+              />
             </div>
             <span className="font-[var(--font-display)] text-base font-semibold tracking-tight">
               {siteConfig.name}
