@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -8,7 +10,7 @@ import { siteConfig } from "@/config/site";
 
 function AppStoreBadge({ variant }: { variant: "black" | "white" }) {
   // Official Apple badge service (do not modify the badge artwork)
-  const url =
+  const src =
     variant === "white"
       ? "https://tools.applemediaservices.com/api/badges/download-on-the-app-store/white/en-us?size=250x83"
       : "https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83";
@@ -21,10 +23,11 @@ function AppStoreBadge({ variant }: { variant: "black" | "white" }) {
       aria-label="Download on the App Store"
       className="inline-flex"
     >
-      // eslint-disable-next-line @next/next/no-img-element
-      <img
-        src={url}
+      <Image
+        src={src}
         alt="Download on the App Store"
+        width={250}
+        height={83}
         className="h-[44px] w-auto"
       />
     </a>
@@ -226,15 +229,28 @@ export default function HomePage() {
         <section id="how" className="mx-auto max-w-6xl px-4 py-14">
           <SectionHeader
             eyebrow="Simple flow"
-            title="Create → PDF → send"
+            title="Create → PDF → Send"
             subtitle="Three steps. No mess. Just invoices that look professional."
           />
 
           <div className="mt-10 grid gap-4 md:grid-cols-3">
             {siteConfig.howItWorks.map((s) => (
               <Card key={s.title} className="p-6">
-                <div className="text-sm font-semibold">{s.title}</div>
-                <p className="mt-2 text-sm text-muted-foreground">
+                <div className="flex items-center gap-3">
+                  {"icon" in s ? (
+                    <div className="grid size-10 place-items-center rounded-xl border bg-muted/20">
+                      <Image
+                        src={(s as any).icon}
+                        alt={s.title}
+                        width={40}
+                        height={40}
+                        className="size-8"
+                      />
+                    </div>
+                  ) : null}
+                  <div className="text-sm font-semibold">{s.title}</div>
+                </div>
+                <p className="mt-3 text-sm text-muted-foreground">
                   {s.description}
                 </p>
               </Card>

@@ -24,14 +24,17 @@ export const siteConfig = {
     {
       title: "Create",
       description: "Pick a template, add your client, items, and totals — fast.",
+      icon: "/thiings/invoice.png",
     },
     {
       title: "Export",
       description: "Generate a clean, share-ready PDF that looks professional.",
+      icon: "/thiings/pdf.png",
     },
     {
       title: "Send",
       description: "Share the invoice in seconds and get back to work.",
+      icon: "/thiings/share.png",
     },
   ],
 
