@@ -78,15 +78,38 @@ export const siteConfig = {
       highlight: false,
     },
     {
-      name: "Pro",
-      price: "—",
-      tagline: "Branding + advanced features for serious invoicing.",
+      name: "Pro (Monthly)",
+      price: "$3.99/mo",
+      tagline: "Best if you’re just getting started.",
       bullets: [
-        "Brand customization",
-        "More templates & controls",
-        "Priority features as we ship",
+        "Unlimited clients & invoices",
+        "Professional PDF invoices",
+        "Custom logo on PDFs",
+      ],
+      highlight: false,
+    },
+    {
+      name: "Pro (Annual)",
+      price: "$29.99/yr",
+      tagline: "Only $2.49/mo · 38% off",
+      bullets: [
+        "Unlimited clients & invoices",
+        "Professional PDF invoices",
+        "Expense tracking & reports",
+        "Payment tracking & reminders",
       ],
       highlight: true,
+    },
+    {
+      name: "Pro (Lifetime)",
+      price: "$49.99",
+      tagline: "Pay once. Use it forever.",
+      bullets: [
+        "One-time purchase",
+        "Unlock Pro features",
+        "No recurring billing",
+      ],
+      highlight: false,
     },
   ],
 
@@ -113,7 +136,7 @@ export const siteConfig = {
     },
     {
       q: "How do I get support?",
-      a: "Email: support@hiolo.dev (change if you want a dedicated Invoicent address).",
+      a: "Email: hi@hiolo.dev",
     },
   ],
 } as const;

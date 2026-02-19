@@ -1,8 +1,19 @@
+import Link from "next/link";
+
 import { siteConfig } from "@/config/site";
 
 export default function PrivacyPage() {
   return (
     <main className="mx-auto max-w-3xl px-4 py-16">
+      <div className="mb-6">
+        <Link
+          href="/"
+          className="text-sm text-muted-foreground underline underline-offset-4 hover:text-foreground"
+        >
+          ← Back
+        </Link>
+      </div>
+
       <h1 className="font-[var(--font-display)] text-3xl font-semibold tracking-tight">
         Privacy Policy
       </h1>
@@ -84,7 +95,7 @@ export default function PrivacyPage() {
         <h2>Contact</h2>
         <p>
           If you have questions about this Privacy Policy, contact us at{" "}
-          <a href="mailto:support@hiolo.dev">support@hiolo.dev</a>.
+          <a href="mailto:hi@hiolo.dev">hi@hiolo.dev</a>.
         </p>
 
         <h2>Changes</h2>

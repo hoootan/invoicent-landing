@@ -357,7 +357,7 @@ export default function HomePage() {
             subtitle="Start free. Upgrade when it saves you time."
           />
 
-          <div className="mt-10 grid gap-4 lg:grid-cols-2">
+          <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             {siteConfig.pricing.map((p) => (
               <Card
                 key={p.name}
