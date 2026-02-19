@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Invoicent",
-  // Canonical marketing site URL (used for SEO + OG). Update to your real domain.
-  siteUrl: "https://invoicent.app",
+  // Canonical marketing site URL (used for SEO + OG).
+  siteUrl: "https://invoicent.hiolo.dev",
   apiUrl: "https://invoicentapi.hiolo.dev",
   appStoreUrl: "https://apps.apple.com/us/app/invoicent/id6759349255",
   appStoreId: "6759349255",
