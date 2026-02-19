@@ -9,11 +9,11 @@ import { ThemeToggle } from "@/components/theme-toggle";
 import { siteConfig } from "@/config/site";
 
 function AppStoreBadge({ variant }: { variant: "black" | "white" }) {
-  // Official Apple badge service (do not modify the badge artwork)
+  // Official Apple badge assets stored locally (do not modify the badge artwork)
   const src =
     variant === "white"
-      ? "https://tools.applemediaservices.com/api/badges/download-on-the-app-store/white/en-us?size=250x83"
-      : "https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83";
+      ? "/badges/appstore-white.svg"
+      : "/badges/appstore-black.svg";
 
   return (
     <a
@@ -29,6 +29,7 @@ function AppStoreBadge({ variant }: { variant: "black" | "white" }) {
         width={250}
         height={83}
         className="h-[44px] w-auto"
+        priority
       />
     </a>
   );

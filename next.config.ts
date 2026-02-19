@@ -1,14 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "tools.applemediaservices.com",
-      },
-    ],
-  },
+  // App Store badges are bundled locally in /public/badges
 };
 
 export default nextConfig;
