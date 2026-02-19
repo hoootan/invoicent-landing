@@ -115,13 +115,13 @@ export default function HomePage() {
       <header className="sticky top-0 z-50 border-b bg-background/70 backdrop-blur supports-[backdrop-filter]:bg-background/50">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
           <div className="flex items-center gap-2">
-            <div className="grid size-9 place-items-center overflow-hidden rounded-xl">
+            <div className="grid size-9 place-items-center">
               <Image
                 src="/brand/logo.png"
                 alt={`${siteConfig.name} logo`}
                 width={36}
                 height={36}
-                className="size-9"
+                className="size-9 rounded-none"
                 priority
               />
             </div>
