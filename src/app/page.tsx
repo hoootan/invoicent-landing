@@ -189,9 +189,6 @@ export default function HomePage() {
                   <AppStoreBadge variant="white" />
                 </div>
 
-                <Button variant="outline" asChild>
-                  <a href="#how">See how it works</a>
-                </Button>
               </div>
 
               <p className="mt-4 text-xs text-muted-foreground">
