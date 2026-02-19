@@ -240,15 +240,13 @@ export default function HomePage() {
               <Card key={s.title} className="p-6">
                 <div className="flex items-center gap-3">
                   {"icon" in s ? (
-                    <div className="grid size-10 place-items-center rounded-xl border bg-muted/20">
-                      <Image
-                        src={(s as any).icon}
-                        alt={s.title}
-                        width={40}
-                        height={40}
-                        className="size-8"
-                      />
-                    </div>
+                    <Image
+                      src={(s as any).icon}
+                      alt={s.title}
+                      width={40}
+                      height={40}
+                      className="size-8"
+                    />
                   ) : null}
                   <div className="text-sm font-semibold">{s.title}</div>
                 </div>
@@ -273,15 +271,13 @@ export default function HomePage() {
               <Card key={f.title} className="p-6">
                 <div className="flex items-start gap-3">
                   {"icon" in f ? (
-                    <div className="mt-0.5 grid size-10 shrink-0 place-items-center rounded-xl border bg-muted/20">
-                      <Image
-                        src={(f as any).icon}
-                        alt={f.title}
-                        width={40}
-                        height={40}
-                        className="size-8"
-                      />
-                    </div>
+                    <Image
+                      src={(f as any).icon}
+                      alt={f.title}
+                      width={40}
+                      height={40}
+                      className="mt-0.5 size-8 shrink-0"
+                    />
                   ) : null}
                   <div>
                     <div className="text-sm font-semibold">{f.title}</div>
