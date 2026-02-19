@@ -30,6 +30,7 @@ function AppStoreBadge({ variant }: { variant: "black" | "white" }) {
         height={83}
         className="h-[44px] w-auto"
         priority
+        unoptimized
       />
     </a>
   );
