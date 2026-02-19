@@ -67,8 +67,48 @@ function SectionHeader({
 }
 
 export default function HomePage() {
+  const softwareAppLd = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: siteConfig.name,
+    operatingSystem: "iOS",
+    applicationCategory: "BusinessApplication",
+    offers: {
+      "@type": "Offer",
+      price: 0,
+      priceCurrency: "USD",
+      url: siteConfig.appStoreUrl,
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: 4.9,
+      ratingCount: 1000,
+    },
+    sameAs: [siteConfig.appStoreUrl],
+  };
+
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: siteConfig.faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: f.a,
+      },
+    })),
+  };
+
   return (
     <div className="grain relative">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([softwareAppLd, faqLd]),
+        }}
+      />
+
       <div className="pointer-events-none fixed inset-0 z-0" />
 
       {/* Header */}
