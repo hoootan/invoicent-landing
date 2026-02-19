@@ -268,13 +268,28 @@ export default function HomePage() {
             subtitle="Everything you need to invoice — nothing you don’t."
           />
 
-          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {siteConfig.features.map((f) => (
               <Card key={f.title} className="p-6">
-                <div className="text-sm font-semibold">{f.title}</div>
-                <p className="mt-2 text-sm text-muted-foreground">
-                  {f.description}
-                </p>
+                <div className="flex items-start gap-3">
+                  {"icon" in f ? (
+                    <div className="mt-0.5 grid size-10 shrink-0 place-items-center rounded-xl border bg-muted/20">
+                      <Image
+                        src={(f as any).icon}
+                        alt={f.title}
+                        width={40}
+                        height={40}
+                        className="size-8"
+                      />
+                    </div>
+                  ) : null}
+                  <div>
+                    <div className="text-sm font-semibold">{f.title}</div>
+                    <p className="mt-2 text-sm text-muted-foreground">
+                      {f.description}
+                    </p>
+                  </div>
+                </div>
               </Card>
             ))}
           </div>

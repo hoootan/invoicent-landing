@@ -42,26 +42,42 @@ export const siteConfig = {
     {
       title: "Two clean templates",
       description: "Switch between Minimal and Classic to match your brand vibe.",
+      icon: "/thiings/document.png",
     },
     {
       title: "PDF that looks premium",
       description: "Crisp layout, consistent spacing, and client-ready output.",
+      icon: "/thiings/pdf.png",
     },
     {
       title: "Branding built-in",
       description: "Add your logo and keep your invoices on-brand.",
+      icon: "/thiings/logo.png",
     },
     {
       title: "Multi-currency friendly",
       description: "Invoice clients in the currency you need.",
+      icon: "/thiings/currency.png",
     },
     {
       title: "Clients + line items",
       description: "Keep it structured — items, quantities, taxes, totals.",
+      icon: "/thiings/client.png",
     },
     {
-      title: "Pro when you need it",
-      description: "Upgrade for power features — without naggy UX.",
+      title: "Taxes & totals",
+      description: "Handle taxes cleanly so totals are always correct.",
+      icon: "/thiings/taxes.png",
+    },
+    {
+      title: "Fast by design",
+      description: "Less tapping, more shipping. Invoices in under a minute.",
+      icon: "/thiings/speedometer.png",
+    },
+    {
+      title: "Built for trust",
+      description: "A focused workflow that feels professional from start to finish.",
+      icon: "/thiings/shield.png",
     },
   ],
 
