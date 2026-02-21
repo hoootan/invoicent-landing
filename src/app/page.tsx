@@ -529,11 +529,20 @@ export default function HomePage() {
                   Create a professional invoice today. Ship it in minutes.
                 </p>
               </div>
-              <div className="dark:hidden">
-                <AppStoreBadge variant="black" />
-              </div>
-              <div className="hidden dark:block">
-                <AppStoreBadge variant="white" />
+              <div className="flex flex-wrap items-center gap-3">
+                <div className="dark:hidden">
+                  <AppStoreBadge variant="black" />
+                </div>
+                <div className="hidden dark:block">
+                  <AppStoreBadge variant="white" />
+                </div>
+                <div className="dark:hidden">
+                  <WebAppBadge variant="black" />
+                </div>
+                <div className="hidden dark:block">
+                  <WebAppBadge variant="white" />
+                </div>
+                <GooglePlayBadge />
               </div>
             </div>
           </Card>
