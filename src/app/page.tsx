@@ -63,19 +63,14 @@ function WebAppBadge({ variant }: { variant: "black" | "white" }) {
   );
 }
 
-function GooglePlayBadge({ variant }: { variant: "black" | "white" }) {
-  const src =
-    variant === "white"
-      ? "/badges/googleplay-white.svg"
-      : "/badges/googleplay-black.svg";
-
+function GooglePlayBadge() {
   return (
     <span
       aria-label="Coming soon on Google Play"
-      className="inline-flex cursor-not-allowed"
+      className="inline-flex cursor-not-allowed opacity-40 grayscale"
     >
       <Image
-        src={src}
+        src="/badges/googleplay-official.svg"
         alt="Coming soon on Google Play"
         width={280}
         height={83}
@@ -250,12 +245,7 @@ export default function HomePage() {
                 <div className="hidden dark:block">
                   <WebAppBadge variant="white" />
                 </div>
-                <div className="dark:hidden">
-                  <GooglePlayBadge variant="black" />
-                </div>
-                <div className="hidden dark:block">
-                  <GooglePlayBadge variant="white" />
-                </div>
+                <GooglePlayBadge />
               </div>
 
               <p className="mt-4 text-xs text-muted-foreground">
