@@ -65,20 +65,23 @@ function WebAppBadge({ variant }: { variant: "black" | "white" }) {
 
 function GooglePlayBadge() {
   return (
-    <span
-      aria-label="Coming soon on Google Play"
-      className="inline-flex cursor-not-allowed opacity-40 grayscale"
+    <a
+      href={siteConfig.playStoreUrl}
+      target="_blank"
+      rel="noreferrer"
+      aria-label="Get it on Google Play"
+      className="inline-flex"
     >
       <Image
         src="/badges/googleplay-official.svg"
-        alt="Coming soon on Google Play"
-        width={280}
+        alt="Get it on Google Play"
+        width={250}
         height={83}
         className="h-[44px] w-auto"
         priority
         unoptimized
       />
-    </span>
+    </a>
   );
 }
 
@@ -130,7 +133,7 @@ export default function HomePage() {
       ratingValue: 4.9,
       ratingCount: 1000,
     },
-    sameAs: [siteConfig.appStoreUrl, siteConfig.webAppUrl],
+    sameAs: [siteConfig.appStoreUrl, siteConfig.webAppUrl, siteConfig.playStoreUrl],
   };
 
   const faqLd = {
@@ -189,14 +192,6 @@ export default function HomePage() {
           </nav>
 
           <div className="flex items-center gap-2">
-            <div className="hidden sm:block">
-              <div className="hidden dark:block">
-                <AppStoreBadge variant="white" />
-              </div>
-              <div className="block dark:hidden">
-                <AppStoreBadge variant="black" />
-              </div>
-            </div>
             <ThemeToggle />
           </div>
         </div>
