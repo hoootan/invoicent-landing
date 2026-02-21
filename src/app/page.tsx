@@ -36,6 +36,33 @@ function AppStoreBadge({ variant }: { variant: "black" | "white" }) {
   );
 }
 
+function WebAppBadge({ variant }: { variant: "black" | "white" }) {
+  const src =
+    variant === "white"
+      ? "/badges/webapp-white.svg"
+      : "/badges/webapp-black.svg";
+
+  return (
+    <a
+      href={siteConfig.webAppUrl}
+      target="_blank"
+      rel="noreferrer"
+      aria-label="Open in Web App"
+      className="inline-flex"
+    >
+      <Image
+        src={src}
+        alt="Open in Web App"
+        width={250}
+        height={83}
+        className="h-[44px] w-auto"
+        priority
+        unoptimized
+      />
+    </a>
+  );
+}
+
 function SectionHeader({
   eyebrow,
   title,
@@ -84,7 +111,7 @@ export default function HomePage() {
       ratingValue: 4.9,
       ratingCount: 1000,
     },
-    sameAs: [siteConfig.appStoreUrl],
+    sameAs: [siteConfig.appStoreUrl, siteConfig.webAppUrl],
   };
 
   const faqLd = {
@@ -193,7 +220,12 @@ export default function HomePage() {
                 <div className="hidden dark:block">
                   <AppStoreBadge variant="white" />
                 </div>
-
+                <div className="dark:hidden">
+                  <WebAppBadge variant="black" />
+                </div>
+                <div className="hidden dark:block">
+                  <WebAppBadge variant="white" />
+                </div>
               </div>
 
               <p className="mt-4 text-xs text-muted-foreground">

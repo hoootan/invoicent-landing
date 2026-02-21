@@ -5,6 +5,7 @@ export const siteConfig = {
   apiUrl: "https://invoicentapi.hiolo.dev",
   appStoreUrl: "https://apps.apple.com/us/app/invoicent/id6759349255",
   appStoreId: "6759349255",
+  webAppUrl: "https://app.invoicent.hiolo.dev",
 
   tagline: "Get paid faster with invoices that look legit.",
   description:
