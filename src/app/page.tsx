@@ -73,7 +73,7 @@ function GooglePlayBadge() {
       className="inline-flex"
     >
       <Image
-        src="/badges/googleplay-official.svg"
+        src="/badges/googleplay.png"
         alt="Get it on Google Play"
         width={250}
         height={83}
