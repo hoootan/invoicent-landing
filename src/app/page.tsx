@@ -77,7 +77,7 @@ function GooglePlayBadge() {
         alt="Get it on Google Play"
         width={250}
         height={83}
-        className="h-[44px] w-auto"
+        className="h-[40px] w-auto"
         priority
         unoptimized
       />
