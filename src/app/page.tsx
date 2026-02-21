@@ -227,7 +227,7 @@ export default function HomePage() {
                 ))}
               </ul>
 
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-start">
                 <div className="dark:hidden">
                   <AppStoreBadge variant="black" />
                 </div>
