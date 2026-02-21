@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="134.5" height="40" viewBox="0 0 134.5 40">
+  <g>
+    <!-- Outer border -->
+    <rect x="0" y="0" width="134.5" height="40" rx="6" ry="6" fill="#a6a6a6"/>
+    <!-- Inner background -->
+    <rect x="0.75" y="0.75" width="133" height="38.5" rx="5.25" ry="5.25" fill="#000"/>
+    <!-- Play triangle icon -->
+    <g transform="translate(13, 10)">
+      <path d="M1 1.5L1 18.5L14 10Z" fill="#fff" opacity="0.5"/>
+      <path d="M1 1.5L8.5 6.5L3 10Z" fill="#fff" opacity="0.35"/>
+      <path d="M1 18.5L8.5 13.5L3 10Z" fill="#fff" opacity="0.35"/>
+      <path d="M8.5 6.5L14 10L8.5 13.5Z" fill="#fff" opacity="0.45"/>
+    </g>
+    <!-- "COMING SOON ON" small text -->
+    <text x="32" y="15.5" fill="#fff" font-family="-apple-system, SF Pro Text, Helvetica, Arial, sans-serif" font-size="6.5" letter-spacing="0.5" font-weight="400" opacity="0.5">COMING SOON ON</text>
+    <!-- "Google Play" large text -->
+    <text x="32" y="28.5" fill="#fff" font-family="-apple-system, SF Pro Display, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" letter-spacing="0.2" opacity="0.5">Google Play</text>
+  </g>
+</svg>
