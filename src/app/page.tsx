@@ -70,14 +70,14 @@ function GooglePlayBadge() {
       target="_blank"
       rel="noreferrer"
       aria-label="Get it on Google Play"
-      className="inline-flex self-center"
+      className="inline-flex items-center leading-none"
     >
       <Image
         src="/badges/googleplay.png"
         alt="Get it on Google Play"
         width={250}
         height={83}
-        className="h-[40px] w-auto"
+        className="block h-[44px] w-auto align-top"
         priority
         unoptimized
       />
